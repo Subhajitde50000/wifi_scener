@@ -1,0 +1,28 @@
+# virtualenvs
+.venv/
+venv/
+env/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# scan artefacts / captures (never commit captured RF data)
+output/
+*.pcap
+*.pcapng
+!tests/fixture.pcap
+wifi-*.csv
+wifi-*.json
+wifi-*.html
+wifi-*.md
+
+# os
+.DS_Store
+
+# runtime lab sqlite logs (never commit)
+*.sqlite
